@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import {
   Card,
   CardContent,
@@ -20,6 +21,9 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Star, Plus, ShoppingCart, ChevronRight, ThumbsUp, Cpu, CircuitBoard, HardDrive, Monitor, Battery, Scale, LayoutGrid, Gpu } from "lucide-react";
 import { motion } from "framer-motion";
+import productImage1 from "@/assets/88888.20.webp";
+import productImage2 from "@/assets/main-pic_ca840ba1-8fef-4e19-abd3-d30a59df4497.webp";
+import productImage3 from "@/assets/Samsung-Mobile-Galaxy-Tab-S10-Series-Samsungs-First-Galaxy-AI-Tablet_main1_F.jpg";
 
 // Sample data - In a real app, this would come from an API or props
 const productData = {
@@ -31,9 +35,9 @@ const productData = {
   aiTag: "Best for AI Development",
   summary: "The ultimate AI-powered laptop featuring blazing-fast performance, stunning 4K display, and exceptional battery life. Perfect for developers, creators, and AI enthusiasts.",
   images: [
-    "/src/assets/88888.20.webp",
-    "/src/assets/main-pic_ca840ba1-8fef-4e19-abd3-d30a59df4497.webp",
-    "/src/assets/Samsung-Mobile-Galaxy-Tab-S10-Series-Samsungs-First-Galaxy-AI-Tablet_main1_F.jpg",
+    productImage1,
+    productImage2,
+    productImage3,
   ],
   specifications: [
     { name: "Processor", value: "AI Core X1000", icon: Cpu, description: "Next-gen AI processor with dedicated neural engine" },
